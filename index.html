@@ -200,7 +200,7 @@
 					<h2 class="sub-section-title">1. Select image</h2>
 					<input type="file" id="file-input" name="file-input" multiple/><br />
 				</div>
-				<div class="column column-center">
+				<!--<div class="column column-center">
 					<h2 class="sub-section-title">or</h2>
 				</div>
 				<div class="column column-right">
@@ -212,7 +212,7 @@
 					</div>
 					<button onclick="handleTextInput('horizontal')">Read as horizontal</button>
 					<button onclick="handleTextInput('vertical')">Read as vertical</button>
-				</div>
+				</div>-->
 			</section>
 		</section>
 		<section class="section bottom-divider">
@@ -228,7 +228,7 @@
 							<button id="all-same-size">all same size</button>
 						</div>
 					</div>
-					<div class="table-row">
+					<!---<div class="table-row">
 						<div class="table-cell"><label>Background color:</label></div>
 						<div class="table-cell">
 							<input id="backgroundColorWhite" type="radio" name="backgroundColor" value="white" checked="checked" onchange="updateRadio('backgroundColor')"/>
@@ -238,11 +238,11 @@
 							<input id="backgroundColorTransparent" type="radio" name="backgroundColor" value="transparent" onchange="updateRadio('backgroundColor')"/>
 							<label for="backgroundColorTransparent" class="smallLabel">Transparent</label>
 						</div>
-					</div>
+					</div>--->
 					<div class="table-row">
 						<div class="table-cell"><label for="invertColors">Invert image colors</label></div>
 						<div class="table-cell">
-							<input id="invertColors" type="checkbox" onchange="updateBoolean('invertColors')" />
+							<input id="invertColors" type="checkbox" checked="checked" onchange="updateBoolean('invertColors')" />
 						</div>
 					</div>
 					<div class="table-row">
