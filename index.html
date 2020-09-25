@@ -400,7 +400,8 @@
 					// When we have the complete 8 bits, combine them into a hex value
 					if(byteIndex < 0){
 						//var byteSet = number.toString(16);            
-						var byteSet = (((number & 0xF) << 4) | ((number >> 4) & 0xF)).toString(16);
+						//var byteSet = (((number & 0xF) << 4) | ((number >> 4) & 0xF)).toString(16);
+						var byteSet = parseInt(number.toString(2).split("").reverse().join(""), 2).toString(16);
 						if(byteSet.length == 1){ byteSet = "0"+byteSet; }
 						var b = "0x"+byteSet;
 						output_string += b + ", ";
